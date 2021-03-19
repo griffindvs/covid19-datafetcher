@@ -32,13 +32,13 @@ AZ:
   AGG(p. Choose Test Type)-alias-1: ANTIBODY_TOTAL
 CA:
   date: DATE
-  reported_cases: POSITIVE
+  reported_cases: CONFIRMED
   reported_deaths: DEATH
   reported_tests: SPECIMENS
   deaths: DEATH
   total_tests: SPECIMENS
   positive_tests: SPECIMENS_POS
-  cases: POSITIVE
+  cases: CONFIRMED
   # "2020-03-20"
   __strptime: "%Y-%m-%d"
 CO:
@@ -147,7 +147,7 @@ GU:
 HI:
   reportdt: TIMESTAMP
   week_ending: TIMESTAMP
-  toDate_totaltests: SPECIMENS
+  toDate_totaltests: PCR_TEST_ENCOUNTERS
   toDate_positive: SPECIMENS_POS
   toDate_positiveAndPresumed: POSITIVE
   cumulative_deaths: DEATH
@@ -258,7 +258,7 @@ MN:
   Date reported to MDH: DATE
   # date: 3/28/20
   __strptime: "%m/%d/%y"
-  Total approximate number of completed PCR tests (cumulative): SPECIMENS
+  Total approximate number of completed PCR tests (cumulative): PCR_TEST_ENCOUNTERS
   Total approximate number of completed antigen tests (cumulative): ANTIGEN_TOTAL
   Specimen collection date: DATE
   Total confirmed cases (cumulative): CONFIRMED
@@ -417,7 +417,7 @@ UT:
   # cumulative
   "Overview_Seven-Day Rolling Average Mortality by Date of Death:DATE_USED": Death
   "Overview_Seven-Day Rolling Average Mortality by Date of Death:Date": DATE
-  "Overview_Seven-Day Rolling Average Mortality by Date of Death:Cumulative Mortalities": Death
+  "Overview_Seven-Day Rolling Average Mortality by Date of Death:Cumulative Mortalities": DEATH
 
   # not cumulative
   "Overview_Total Tests by Date:DATE_USED": Specimen Collection
